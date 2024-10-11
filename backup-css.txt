@@ -1,0 +1,72 @@
+* {
+    background-color: rgb(39, 39, 39);
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    color: beige;
+}
+
+header h1 {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 40px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+}
+
+header .container {
+    border: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    padding: 1px;
+    
+    
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    padding: 6px;
+}
+
+.line-bottom {
+    border-bottom: 2px solid rgba(245, 245, 220);
+}
+
+body section img {
+    max-height: 400px;
+    margin: 8px;
+}
+
+body p {
+    max-width: 1600px;
+    min-width: 800px;
+    text-align: justify;
+    border: 8px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+.top-button {
+    padding: 0px;
+    margin: 8px;
+    max-height: 20px;
+}
+
+footer .container p {
+    align-items: center;
+    margin-top: 50px;
+    font-size: 10px;
+}

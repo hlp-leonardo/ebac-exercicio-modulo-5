@@ -1,0 +1,83 @@
+* {
+    background-color: rgb(39, 39, 39);
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+    color: beige;
+}
+
+header,
+body {
+    max-width: 1600px;
+    min-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 8px;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 40px;
+}
+
+header nav li {
+    display: inline;
+    padding: 8px;
+    font-size: 12px;
+}
+
+header .container {
+    border: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body section {
+    display: flex;
+}
+
+.container h2 {
+    padding: 6px;
+}
+
+.h2LineBottom {
+    border-bottom: 2px solid rgba(245, 245, 220);
+}
+
+section .container img {
+    display: inline;
+    padding: 8px;
+    max-height: 400px;
+}
+
+.guitarImgLeft img {
+    float: left;
+}
+
+.guitarImgRight img {
+    float: right;
+}
+
+.guitarTxt p {
+    display: flexbox;
+    padding: 8px;
+    text-align: justify;
+    max-width: auto;
+}
+
+#fonte {
+    padding: 8px;
+    font-size: 12px;
+}
+
+#topButton img {
+    padding: 0px;
+    margin: 8px;
+    max-height: 20px;
+}
+
+footer {
+    padding: 0px;
+    margin-top: 50px;
+    font-size: 10px;
+}
