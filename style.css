@@ -76,6 +76,15 @@ section .container img {
     max-height: 20px;
 }
 
+#contato .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
 footer {
     padding: 0px;
     margin-top: 50px;
