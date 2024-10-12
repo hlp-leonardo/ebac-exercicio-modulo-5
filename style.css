@@ -76,13 +76,28 @@ section .container img {
     max-height: 20px;
 }
 
-#contato .container {
-    display: block;
+#contato h3,
+#formulario {
+    padding: 8px;
 }
 
-.contact-methods {
+#formulario input {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+textarea {
+    resize: none;
+    text
+}
+
+#formulario ::placeholder {
+    color: rgba(245, 245, 220, 0.699);
+}
+
+#botao-enviar {
+    display: flex;
+    margin-top: 8px;
 }
 
 footer {
