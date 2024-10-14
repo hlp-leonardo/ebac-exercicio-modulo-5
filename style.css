@@ -33,75 +33,120 @@ header .container {
 }
 
 body section {
-    display: flex;
+    display: inline-block;
 }
 
 .container h2 {
     padding: 6px;
 }
 
-.h2LineBottom {
+.linha-h2 {
     border-bottom: 2px solid rgba(245, 245, 220);
 }
 
-section .container img {
+#linha-menor-h2 {
+    width: 780px;
+    border-bottom: 2px solid rgba(245, 245, 220);
+}
+
+.alinhamento-img-esquerda img {
     display: inline;
+    float: left;
     padding: 8px;
     max-height: 400px;
 }
 
-.guitarImgLeft img {
-    float: left;
-}
-
-.guitarImgRight img {
+.alinhamento-img-direita img {
+    display: inline;
     float: right;
+    padding: 8px;
+    max-height: 400px;
 }
 
-.guitarTxt p {
+.texto-guitarra p {
     display: flexbox;
     padding: 8px;
     text-align: justify;
     max-width: auto;
 }
 
-#fonte {
+.fonte {
     padding: 8px;
     font-size: 12px;
 }
 
-#topButton img {
+#voltar-ao-topo img {
     padding: 0px;
     margin: 8px;
     max-height: 20px;
 }
 
-#contato h3,
-#formulario {
+#contato,
+#social {
+    display: flex;
+}
+
+#contato h3 {
     padding: 8px;
 }
 
-#formulario input {
-    display: flex;
-    margin-bottom: 8px;
+textarea {
+    display: block;
+    margin: 8px;
+    width: 375px;
+}
+
+.input-nome-telefone input {
+    display: flexbox;
+    margin: 8px;
+    height: 25px;
+    width: 366px;
+}
+
+.input-email input {
+    display: flexbox;
+    margin: 8px;
+    height: 25px;
+    width: 760px;
 }
 
 textarea {
     resize: none;
-    text
-}
-
-#formulario ::placeholder {
-    color: rgba(245, 245, 220, 0.699);
+    height: 150px;
+    width: 760px;
 }
 
 #botao-enviar {
-    display: flex;
-    margin-top: 8px;
+    display: block;
+    margin: 8px;
+    height: 25px;
+    width: 150px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: beige;
+    color: rgb(39, 39, 39);
+    text-decoration: underline;
+}
+
+#social li {
+    display: inline;
+    margin: 8px;
+}
+
+#social li a {
+    text-decoration: none;
+}
+
+#social li img {
+    padding: 0px;
+    max-height: 25px;
 }
 
 footer {
-    padding: 0px;
+    display: inline;
+    padding: 2px;
     margin-top: 50px;
     font-size: 10px;
 }
