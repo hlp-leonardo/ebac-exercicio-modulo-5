@@ -53,14 +53,16 @@ body section {
     display: inline;
     float: left;
     padding: 8px;
-    max-height: 400px;
+    height: 400px;
+    width: 140px;
 }
 
 .alinhamento-img-direita img {
     display: inline;
     float: right;
     padding: 8px;
-    max-height: 400px;
+    height: 400px;
+    width: 140px;
 }
 
 .texto-guitarra p {
