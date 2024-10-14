@@ -80,7 +80,8 @@ body section {
 #voltar-ao-topo img {
     padding: 0px;
     margin: 8px;
-    max-height: 20px;
+    height: 20px;
+    width: 20px;
 }
 
 #contato,
@@ -143,7 +144,7 @@ form button:hover {
 
 #social li img {
     padding: 0px;
-    max-height: 25px;
+    height: 25px;
 }
 
 footer {
