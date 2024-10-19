@@ -44,6 +44,16 @@
                     <li>
                         <a href="#telecaster">Telecaster</a>
                     </li>
+                </ul>
+            </nav>
+            <form>
+                <input type="search" placeholder="Pesquisa">
+            </form>
+            <button type="submit">
+                Pesquisar
+            </button>
+            <nav id="contato-social">
+                <ul>
                     <li>
                         <a href="#contato">Contato</a>
                     </li>
@@ -52,79 +62,68 @@
                     </li>
                 </ul>
             </nav>
-            <div>
-                <form>
-                    <input type="search">
-                </form>
-                <button type="submit">Pesquisar</button>
-            </div>
         </div>
     </header>
 
+    <section id="img-temp">
+        <div class="container-temp">
+            <img src="./images/slideshow/dave-mustaine_jpg.jpg" alt="Foto do guitarrista Dave Mustaine">
+        </div>
+    </section>
+<!--
     <section id="slideshow">
         <div class="slideshow-container">
-            <!-- Don't wrap targets in parent -->
-            <s id="s1"></s>
-            <s id="s2"></s>
-            <s id="s3"></s>
-            <s id="s4"></s>
-            <s id="s5"></s>
-            <s id="s6"></s>
-            <div class="slider">
-                <div>
-                    <a href="#telecaster">
-                        <img src="./images/slideshow/keith-richards_jpg.jpg" alt="Foto do guitarrista Keith Richards">
-                    </a>
-                </div>
-                <div>
-                    <a href="#les-paul">
-                        <img src="./images/slideshow/slash_jpg.jpg" alt="Foto do guitarrista Slash">
-                    </a>
-                </div>
-                <div>
-                    <a href="#stratocaster">
-                        <img src="./images/slideshow/eric-clapton_jpeg.jpeg" alt="Foto do guitarrista Eric Clapton">
-                    </a>
-                </div>
-                <div>
-                    <a href="#flying-v">
-                        <img src="./images/slideshow/dave-mustaine_jpg.jpg" alt="Foto do guitarrista Dave Mustaine">
-                    </a>
-                </div>
-                <div>
-                    <a href="#sg">
-                        <img src="./images/slideshow/angus-young_jpg.jpg" alt="Foto do guitarrista Angus Young">
-                    </a>
-                </div>
-                <div>
-                    <a href="#superstrat">
-                        <img src="./images/slideshow/eddie-van-halen_jpg.jpg" alt="Foto do guitarrista Eddie Van Halen">
-                    </a>
-                </div>
+            <input type="radio" class="slide-controller" name="slide" id="slide-1" checked />
+            <input type="radio" class="slide-controller" name="slide" id="slide-2" />
+            <input type="radio" class="slide-controller" name="slide" id="slide-3" />
+            <input type="radio" class="slide-controller" name="slide" id="slide-4" />
+            <input type="radio" class="slide-controller" name="slide" id="slide-5" />
+            <input type="radio" class="slide-controller" name="slide" id="slide-6" />
+            <div class="s1">
+                <a href="#telecaster">
+                    <img src="./images/slideshow/keith-richards_jpg.jpg" alt="Foto do guitarrista Keith Richards">
+                </a>
             </div>
-            <div class="proxima-anterior">
-                <div><a href="#s6"><img src="./images/logos_e_botoes/slide_anterior_png.png" alt="Botão de voltar slide"></a><a href="#s2"><img src="./images/logos_e_botoes/slide_proximo_png.png" alt="Botão de próximo slide"></a></div>
-                <div><a href="#s1"><img src="./images/logos_e_botoes/slide_anterior_png.png" alt="Botão de voltar slide"></a><a href="#s3"><img src="./images/logos_e_botoes/slide_proximo_png.png" alt="Botão de próximo slide"></a></div>
-                <div><a href="#s2"><img src="./images/logos_e_botoes/slide_anterior_png.png" alt="Botão de voltar slide"></a><a href="#s4"><img src="./images/logos_e_botoes/slide_proximo_png.png" alt="Botão de próximo slide"></a></div>
-                <div><a href="#s3"><img src="./images/logos_e_botoes/slide_anterior_png.png" alt="Botão de voltar slide"></a><a href="#s5"><img src="./images/logos_e_botoes/slide_proximo_png.png" alt="Botão de próximo slide"></a></div>
-                <div><a href="#s4"><img src="./images/logos_e_botoes/slide_anterior_png.png" alt="Botão de voltar slide"></a><a href="#s6"><img src="./images/logos_e_botoes/slide_proximo_png.png" alt="Botão de próximo slide"></a></div>
-                <div><a href="#s5"><img src="./images/logos_e_botoes/slide_anterior_png.png" alt="Botão de voltar slide"></a><a href="#s1"><img src="./images/logos_e_botoes/slide_proximo_png.png" alt="Botão de próximo slide"></a></div>
+            <div class="s2">
+                <a href="#les-paul">
+                    <img src="./images/slideshow/slash_jpg.jpg" alt="Foto do guitarrista Slash">
+                </a>
             </div>
-            <div class="bullets">
-                <a href="#s1"></a>
-                <a href="#s2"></a>
-                <a href="#s3"></a>
-                <a href="#s4"></a>
-                <a href="#s5"></a>
-                <a href="#s6"></a>
+            <div class="s3">
+                <a href="#stratocaster">
+                    <img src="./images/slideshow/eric-clapton_jpeg.jpeg" alt="Foto do guitarrista Eric Clapton">
+                </a>
+            </div>
+            <div class="s4">
+                <a href="#flying-v">
+                    <img src="./images/slideshow/dave-mustaine_jpg.jpg" alt="Foto do guitarrista Dave Mustaine">
+                </a>
+            </div>
+            <div class="s5">
+                <a href="#sg">
+                    <img src="./images/slideshow/angus-young_jpg.jpg" alt="Foto do guitarrista Angus Young">
+                </a>
+            </div>
+            <div class="s6">
+                <a href="#superstrat">
+                    <img src="./images/slideshow/eddie-van-halen_jpg.jpg" alt="Foto do guitarrista Eddie Van Halen">
+                </a>
+            </div>
+            <div class="navegador">
+                <label id="bullet" for="slide-1"></label>
+                <label id="bullet" for="slide-2"></label>
+                <label id="bullet" for="slide-3"></label>
+                <label id="bullet" for="slide-4"></label>
+                <label id="bullet" for="slide-5"></label>
+                <label id="bullet" for="slide-6"></label>
             </div>
         </div>
     </section>
-
+-->
     <section id="telecaster">
         <div class="container">
-            <h2 class="linha-h2">Telecaster | 1950</h2>
             <div class="alinhamento-img-esquerda">
+                <h2 id="linha-h2">Telecaster | 1950</h2>
                 <picture>
                     <source type="image/webp" srcset="./images/guitarras/tele_f_webp.webp">
                     <source type="image/png" srcset="./images/guitarras/tele_f_png.png">
@@ -178,8 +177,8 @@
 
     <section id="les-paul">
         <div class="container">
-            <h2 align="right" class="linha-h2">1952 | Les Paul</h2>
             <div class="alinhamento-img-direita">
+                <h2 id="linha-h2">1952 | Les Paul</h2>
                 <picture>
                     <source type="image/webp" srcset="./images/guitarras/les-paul_b_webp.webp">
                     <source type="image/png" srcset="./images/guitarras/les-paul_b_png.png">
@@ -249,8 +248,8 @@
 
     <section id="stratocaster">
         <div class="container">
-            <h2 class="linha-h2">Stratocaster | 1954</h2>
             <div class="alinhamento-img-esquerda">
+                <h2 id="linha-h2">Stratocaster | 1954</h2>
                 <picture>
                     <source type="image/webp" srcset="./images/guitarras/strato_f_webp.webp">
                     <source type="image/png" srcset="./images/guitarras/strato_f_png.png">
@@ -326,8 +325,8 @@
 
     <section id="flying-v">
         <div class="container">
-            <h2 align="right" class="linha-h2">1958 | Flying V</h2>
             <div class="alinhamento-img-direita">
+                <h2 id="linha-h2">1958 | Flying V</h2>
                 <picture>
                     <source type="image/webp" srcset="./images/guitarras/flying-v_b_webp.webp">
                     <source type="image/png" srcset="./images/guitarras/flying-v_b_png.png">
@@ -382,8 +381,8 @@
 
     <section id="sg">
         <div class="container">
-            <h2 class="linha-h2">SG | 1960</h2>
             <div class="alinhamento-img-esquerda">
+                <h2 id="linha-h2">SG | 1960</h2>
                 <picture>
                     <source type="image/webp" srcset="./images/guitarras/sg_f_webp.webp">
                     <source type="image/png" srcset="./images/guitarras/sg_f_png.png">
@@ -438,8 +437,8 @@
 
     <section id="superstrat">
         <div class="container">
-            <h2 align="right" class="linha-h2">1980 | Superstrat</h2>
             <div class="alinhamento-img-direita">
+                <h2 id="linha-h2">1980 | Superstrat</h2>
                 <picture>
                     <source type="image/webp" srcset="./images/guitarras/superstrat_b_webp.webp">
                     <source type="image/png" srcset="./images/guitarras/superstrat_b_png.png">
@@ -501,7 +500,7 @@
 
     <section id="contato">
         <div class="container">
-            <h2 id="linha-menor-h2">Dúvidas ou sugestões?</h2>
+            <h2 id="linha-h2-contato-social">Dúvidas ou sugestões?</h2>
             <h3>Fale conosco</h3>
             <div class="formulario">
                 <form>
@@ -521,7 +520,7 @@
 
     <section id="social">
         <div class="container">
-            <h2 id="linha-menor-h2">Nossas redes sociais</h2>
+            <h2 id="linha-h2-contato-social">Nossas redes sociais</h2>
             <ul>
                 <li>
                     <a href="https://youtube.com" title="Visite nosso canal no YouTube">
@@ -556,8 +555,8 @@
 
     <footer>
         <div class="container">
-            <p align="center">
-                &copy; PRINCIPAIS MODELOS DE GUITARRA - Todos os direitos reservados - 2024
+            <p>
+                &copy; Mundo das guitarras - Todos os direitos reservados - 2024
             </p>
         </div>
     </footer>
