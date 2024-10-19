@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
     font-family: "Merriweather", serif;
     font-weight: normal;
     color: beige;
@@ -10,10 +9,6 @@
 body {
     background-color: rgb(39, 39, 39);
 }
-
-/*
-HEADER
-*/
 
 header {
     background-color: black;
@@ -29,24 +24,31 @@ header {
 header .container {
     display: flex;
     align-items: center;
-    /*justify-content: space-evenly;*/
+    justify-content: space-between;
 }
 
-header picture img {
+header .container picture img {
     padding: 10px;
     height: 150px;
     width: 117px;
 }
 
-header nav li {
-    display: inline-block;
+header li {
+    display: inline;
+    justify-content: space-around;
 }
 
 header nav li a {
-    justify-content: left;
     padding: 6px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
+}
+
+header nav li a:hover {
+    background-color: beige;
+    color: rgb(39, 39, 39);
+    border-radius: 15%;
+    transition: 0.6s;
 }
 
 header input,
@@ -72,15 +74,9 @@ header button:hover,
 #contato .formulario form button:hover {
     background-color: beige;
     color: rgb(39, 39, 39);
+    transition: 0.6s;
 }
-
-.contato-social {
-    display: inline-block;
-    justify-content: right;
-    align-items: end;
-    width: 160px;
-}
-
+/*-----------------------------------------------------------------------------------*/
 .container-temp {
     display: flex;
     margin: auto;
@@ -94,18 +90,22 @@ header button:hover,
     width: 100%;
     height: auto;
 }
+
 .container-temp img {
     max-width: 1600px;
     width: 100%;
     max-height: auto;
     min-height: auto;
-    background-size:100%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
+
+/*-----------------------------------------------------------------------------------*/
 
 /*
 SLIDESHOW
 */
+
 /*
 #slideshow {
     padding: 0px;
@@ -189,9 +189,7 @@ SLIDESHOW
 }
 */
 
-/*
-SECTIONS
-*/
+/*-----------------------------------------------------------------------------------*/
 
 section {
     display: inline-block;
@@ -272,7 +270,7 @@ textarea,
     display: flexbox;
     margin: 8px;
     height: 25px;
-    width: 370px;
+    width: 368px;
     border-color: beige;
 }
 
