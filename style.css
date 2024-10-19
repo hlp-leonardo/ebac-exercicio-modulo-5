@@ -51,7 +51,7 @@ header nav li a {
 
 header input,
 header button {
-    display: inline-block;
+    display: inline;
     margin: 4px;
     height: 25px;
     background-color: rgb(39, 39, 39);
@@ -68,13 +68,15 @@ header button {
     cursor: pointer;
 }
 
-header button:hover {
+header button:hover,
+#contato .formulario form button:hover {
     background-color: beige;
     color: rgb(39, 39, 39);
 }
 
 .contato-social {
     display: inline-block;
+    justify-content: right;
     align-items: end;
     width: 160px;
 }
@@ -256,14 +258,6 @@ section h2 {
 CONTATO
 */
 
-/*
-#contato,
-#social {
-    display: inline-block;
-    width: 100%;
-}
-*/
-
 #contato h3 {
     padding: 8px;
 }
@@ -308,45 +302,19 @@ textarea {
     border-color: beige;
 }
 
-form button:hover {
-    background-color: beige;
-    color: rgb(39, 39, 39);
-    text-decoration: underline;
-}
-
-/*
-SOCIAL
-*/
-
-#social,
-#social {
-    display: inline-block;
-}
-
-#social h2,
-#social .container a {
-    float: right;
-    text-align: right;
-}
-
 #social li {
     display: inline;
-    margin: 8px;
 }
 
 #social li a {
-    padding: 8px;
     text-decoration: none;
 }
 
 #social li img {
-    padding: 0px;
+    padding: 8px;
+    margin-top: 3px;
     height: 25px;
 }
-
-/*
-RODAPE
-*/
 
 footer {
     display: flex;
