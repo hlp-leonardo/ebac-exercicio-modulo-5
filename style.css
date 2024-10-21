@@ -14,6 +14,8 @@ header {
     background-color: black;
 }
 
+/*---------------------------------------------------------------------------------------*/
+
 .container {
     max-width: 1600px;
     min-width: 800px;
@@ -48,7 +50,9 @@ header nav li a:hover {
     background-color: beige;
     color: rgb(39, 39, 39);
     border-radius: 15%;
-    transition: 0.6s;
+    transition: 0.5s;
+    position: relative;
+    top:-5px;
 }
 
 header input,
@@ -76,7 +80,13 @@ header button:hover,
     color: rgb(39, 39, 39);
     transition: 0.6s;
 }
-/*-----------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------*/
+
+/*
+SLIDESHOW
+*/
+
 .container-temp {
     display: flex;
     margin: auto;
@@ -84,112 +94,18 @@ header button:hover,
     min-width: 800px;
 }
 
-.container-temp {
-    max-width: 1600px;
-    min-width: 800px;
-    width: 100%;
-    height: auto;
-}
-
 .container-temp img {
     max-width: 1600px;
     width: 100%;
-    max-height: auto;
-    min-height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
-/*-----------------------------------------------------------------------------------*/
-
-/*
-SLIDESHOW
-*/
-
-/*
-#slideshow {
-    padding: 0px;
-    margin: 0px;
+.container-temp a img:hover {
+    position: relative;
+    top:-10px;
+    right: -10px;
+    box-shadow: 0 5px 8px beige;
+    transition: all 0.3s ease-in-out;
 }
-
-.slideshow-container li img {
-    display: block;
-    justify-content: center;
-    max-height: 632px;
-    max-width: 1600px;
-}
-
-.slideshow-container {
-    overflow: hidden;
-    position: absolute;
-    display: flex;
-
-}
-
-.slideshow-container input {
-    display: none;
-}
-
-.slideshow-container img {
-    justify-content: center;
-    max-height: 632px;
-    max-width: 1600px;
-}
-
-.navegador {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-}
-
-#bullet {
-    height: 18px;
-    width: 18px;
-    border-radius: 20px;
-    margin: 6px;
-    background-color: beige;
-    opacity: 60%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#bullet:hover {
-    background-color: beige;
-    opacity: 85%;
-    width: 28px;
-}
-
-.slideshow-container {
-    transition: 0.8s;
-}
-
-#slide-1:checked ~ .s1 {
-    margin-left: 0;
-}
-
-#slide-2:checked ~ .s1 {
-    margin-left: -100%;
-}
-
-#slide-3:checked ~ .s1 {
-    margin-left: -200%;
-}
-
-#slide-4:checked ~ .s1 {
-    margin-left: -300%;
-}
-
-#slide-5:checked ~ .s1 {
-    margin-left: -400%;
-}
-
-#slide-6:checked ~ .s1 {
-    margin-left: -500%;
-}
-*/
-
-/*-----------------------------------------------------------------------------------*/
 
 section {
     display: inline-block;
@@ -251,10 +167,6 @@ section h2 {
     height: 20px;
     width: 20px;
 }
-
-/*
-CONTATO
-*/
 
 #contato h3 {
     padding: 8px;
