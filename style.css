@@ -17,7 +17,6 @@ header {
 .container {
     max-width: 1600px;
     min-width: 800px;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -69,6 +68,7 @@ header input {
 }
 
 header button {
+    margin-bottom: 10px;
     width: 90px;
     cursor: pointer;
 }
@@ -80,33 +80,19 @@ header button:hover,
     transition: 0.6s;
 }
 
-.pesquisa-contatos a {
-    text-decoration: none;
-}
-
-.pesquisa-contatos p {
-    padding: 5px;
-    margin-top: 5px;
-    font-size: 12px;
-}
-
-header p:hover {
-    text-decoration: underline;
-}
-
-.container-temp {
+.banner-container {
     display: flex;
     margin: auto;
     max-width: 1600px;
     min-width: 800px;
 }
 
-.container-temp img {
+.banner-container img {
     max-width: 1600px;
     width: 100%;
 }
 
-.container-temp a img:hover {
+.banner-container a img:hover {
     position: relative;
     top:-10px;
     right: -10px;
@@ -249,12 +235,19 @@ textarea {
     height: 25px;
 }
 
+#social img:hover {
+    position: relative;
+    top:-2px;
+    right: -2px;
+    transition: all 0.3s ease-in-out;
+}
+
 footer {
     display: flex;
+    min-width: 800px;
     padding: 2px;
     height: 50px;
     align-items: center;
-    justify-content: center;
     margin-top: 50px;
     background-color: black;
 }
@@ -263,11 +256,4 @@ footer p {
     text-align: center;
     font-size: 15px;
     color: beige;
-}
-
-#social img:hover {
-    position: relative;
-    top:-2px;
-    right: -2px;
-    transition: all 0.3s ease-in-out;
 }
